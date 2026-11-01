@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Gocgun.Diagnostics.Fixture</RootNamespace>
+    <AssemblyName>Gocgun.Diagnostics.Shared.TestContracts</AssemblyName>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="protobuf-net" />
+  </ItemGroup>
+</Project>

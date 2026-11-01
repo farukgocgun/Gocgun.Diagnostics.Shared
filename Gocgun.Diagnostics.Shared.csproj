@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Gocgun.Diagnostics.Shared</RootNamespace>
+    <AssemblyName>Gocgun.Diagnostics.Shared</AssemblyName>
+    <Description>Shared login, decode, and audit code for the Gocgun diagnostic tools. Not packed.</Description>
+    <IsPackable>false</IsPackable>
+    <DefaultItemExcludes>$(DefaultItemExcludes);tests/**</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="Gocgun.Diagnostics.Shared.Tests" />
+    <InternalsVisibleTo Include="Gocgun.Cache.Ui" />
+    <InternalsVisibleTo Include="gocgun-cache-ui" />
+    <InternalsVisibleTo Include="Gocgun.Bus.Ui" />
+    <InternalsVisibleTo Include="gocgun-bus-ui" />
+    <InternalsVisibleTo Include="Gocgun.Cache.Ui.Tests" />
+    <InternalsVisibleTo Include="Gocgun.Bus.Ui.Tests" />
+  </ItemGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="protobuf-net" />
+  </ItemGroup>
+</Project>
