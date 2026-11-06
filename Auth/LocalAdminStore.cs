@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Identity;
 
 namespace Gocgun.Diagnostics.Shared.Auth;
 
-/// <summary>Stores one admin password with <see cref="PasswordHasher{TUser}"/>. Does not reference Gocgun.Identity.</summary>
+/// <summary>Stores one admin password with <see cref="PasswordHasher{TUser}"/>.</summary>
 internal sealed class LocalAdminStore
 {
     private readonly PasswordHasher<DiagnosticOperator> hasher = new();
