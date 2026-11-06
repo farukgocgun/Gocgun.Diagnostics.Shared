@@ -49,8 +49,8 @@ public sealed class SharedBehaviorTests
     [Fact]
     public void Pattern_Glob_MatchesOnlyThePrefix()
     {
-        Assert.True(PatternMatcher.IsMatch("crocovity:cache:post:*", "crocovity:cache:post:1"));
-        Assert.False(PatternMatcher.IsMatch("crocovity:cache:post:*", "crocovity:cache:user:1"));
+        Assert.True(PatternMatcher.IsMatch("app:cache:post:*", "app:cache:post:1"));
+        Assert.False(PatternMatcher.IsMatch("app:cache:post:*", "app:cache:user:1"));
         Assert.Equal("demo.Type", PatternMatcher.FindContract([new PatternMap("t:*:post:*", "demo.Type")], "t:abc:post:9"));
     }
 

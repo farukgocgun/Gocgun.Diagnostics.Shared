@@ -1,7 +1,6 @@
 ﻿<Project>
   <!--
-    Crocovity build conventions: docs/architecture/build-conventions.md.
-    TargetFramework and LangVersion follow docs/architecture/backend-tech-stack.md section 1.
+    Shared build conventions for this repository.
   -->
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
